@@ -15,6 +15,8 @@
 		CE6E6CBE26EF89BD00D6A05A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CBD26EF89BD00D6A05A /* UIColor.swift */; };
 		CE6E6CC026EF9CA500D6A05A /* StructuralUnitsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */; };
 		CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */; };
+		CE6E6CC526EFA9C300D6A05A /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC426EFA9C300D6A05A /* Subdivision.swift */; };
+		CE6E6CC726EFA9FA00D6A05A /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */; };
 		CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC126EE251300267F81 /* AppDelegate.swift */; };
 		CED0CECB26EE251500267F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECA26EE251500267F81 /* Assets.xcassets */; };
 		CED0CECE26EE251500267F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */; };
@@ -29,6 +31,8 @@
 		CE6E6CBD26EF89BD00D6A05A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsPresenter.swift; sourceTree = "<group>"; };
 		CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsInteractor.swift; sourceTree = "<group>"; };
+		CE6E6CC426EFA9C300D6A05A /* Subdivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
+		CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		CED0CEBE26EE251300267F81 /* OpenKranodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenKranodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED0CEC126EE251300267F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED0CECA26EE251500267F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +89,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CE6E6CC326EFA96B00D6A05A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E6CC426EFA9C300D6A05A /* Subdivision.swift */,
+				CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		CED0CEB526EE251300267F81 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +117,9 @@
 		CED0CEC026EE251300267F81 /* OpenKranodar */ = {
 			isa = PBXGroup;
 			children = (
-				CE6E6CBC26EF89A000D6A05A /* Extensions */,
 				CE6E6CAE26EE292A00D6A05A /* Modules */,
+				CE6E6CC326EFA96B00D6A05A /* Entities */,
+				CE6E6CBC26EF89A000D6A05A /* Extensions */,
 				CED0CED526EE266400267F81 /* Default */,
 			);
 			path = OpenKranodar;
@@ -198,8 +212,10 @@
 				CE6E6CBB26EF743400D6A05A /* StructuralUnitsViewController.swift in Sources */,
 				CE6E6CC026EF9CA500D6A05A /* StructuralUnitsPresenter.swift in Sources */,
 				CE6E6CB126EE2A7F00D6A05A /* StartScreenRouter.swift in Sources */,
+				CE6E6CC726EFA9FA00D6A05A /* Dataset.swift in Sources */,
 				CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */,
 				CE6E6CB526EF567300D6A05A /* StartScreenPresenter.swift in Sources */,
+				CE6E6CC526EFA9C300D6A05A /* Subdivision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
