@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6E6CB126EE2A7F00D6A05A /* StartScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CB026EE2A7F00D6A05A /* StartScreenRouter.swift */; };
+		CE6E6CB326EE2D7900D6A05A /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CB226EE2D7900D6A05A /* StartScreenViewController.swift */; };
+		CE6E6CB526EF567300D6A05A /* StartScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CB426EF567300D6A05A /* StartScreenPresenter.swift */; };
+		CE6E6CB926EF740200D6A05A /* StructuralUnitsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */; };
+		CE6E6CBB26EF743400D6A05A /* StructuralUnitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CBA26EF743400D6A05A /* StructuralUnitsViewController.swift */; };
+		CE6E6CBE26EF89BD00D6A05A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CBD26EF89BD00D6A05A /* UIColor.swift */; };
+		CE6E6CC026EF9CA500D6A05A /* StructuralUnitsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */; };
+		CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */; };
 		CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC126EE251300267F81 /* AppDelegate.swift */; };
-		CED0CEC426EE251400267F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC326EE251400267F81 /* SceneDelegate.swift */; };
-		CED0CEC626EE251400267F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC526EE251400267F81 /* ViewController.swift */; };
-		CED0CEC926EE251400267F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0CEC726EE251400267F81 /* Main.storyboard */; };
 		CED0CECB26EE251500267F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECA26EE251500267F81 /* Assets.xcassets */; };
 		CED0CECE26EE251500267F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6E6CB026EE2A7F00D6A05A /* StartScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenRouter.swift; sourceTree = "<group>"; };
+		CE6E6CB226EE2D7900D6A05A /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		CE6E6CB426EF567300D6A05A /* StartScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPresenter.swift; sourceTree = "<group>"; };
+		CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsRouter.swift; sourceTree = "<group>"; };
+		CE6E6CBA26EF743400D6A05A /* StructuralUnitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsViewController.swift; sourceTree = "<group>"; };
+		CE6E6CBD26EF89BD00D6A05A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsPresenter.swift; sourceTree = "<group>"; };
+		CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsInteractor.swift; sourceTree = "<group>"; };
 		CED0CEBE26EE251300267F81 /* OpenKranodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenKranodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED0CEC126EE251300267F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CED0CEC326EE251400267F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED0CEC526EE251400267F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CED0CEC826EE251400267F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED0CECA26EE251500267F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED0CECD26EE251500267F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED0CECF26EE251500267F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +47,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6E6CAE26EE292A00D6A05A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E6CB626EF705000D6A05A /* StructuralUnits */,
+				CE6E6CAF26EE29E100D6A05A /* StartScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE6E6CAF26EE29E100D6A05A /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E6CB226EE2D7900D6A05A /* StartScreenViewController.swift */,
+				CE6E6CB426EF567300D6A05A /* StartScreenPresenter.swift */,
+				CE6E6CB026EE2A7F00D6A05A /* StartScreenRouter.swift */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		CE6E6CB626EF705000D6A05A /* StructuralUnits */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E6CBA26EF743400D6A05A /* StructuralUnitsViewController.swift */,
+				CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */,
+				CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */,
+				CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */,
+			);
+			path = StructuralUnits;
+			sourceTree = "<group>";
+		};
+		CE6E6CBC26EF89A000D6A05A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E6CBD26EF89BD00D6A05A /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CED0CEB526EE251300267F81 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +104,22 @@
 		CED0CEC026EE251300267F81 /* OpenKranodar */ = {
 			isa = PBXGroup;
 			children = (
-				CED0CEC126EE251300267F81 /* AppDelegate.swift */,
-				CED0CEC326EE251400267F81 /* SceneDelegate.swift */,
-				CED0CEC526EE251400267F81 /* ViewController.swift */,
-				CED0CEC726EE251400267F81 /* Main.storyboard */,
-				CED0CECA26EE251500267F81 /* Assets.xcassets */,
-				CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */,
-				CED0CECF26EE251500267F81 /* Info.plist */,
+				CE6E6CBC26EF89A000D6A05A /* Extensions */,
+				CE6E6CAE26EE292A00D6A05A /* Modules */,
+				CED0CED526EE266400267F81 /* Default */,
 			);
 			path = OpenKranodar;
+			sourceTree = "<group>";
+		};
+		CED0CED526EE266400267F81 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				CED0CEC126EE251300267F81 /* AppDelegate.swift */,
+				CED0CECF26EE251500267F81 /* Info.plist */,
+				CED0CECA26EE251500267F81 /* Assets.xcassets */,
+				CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */,
+			);
+			path = Default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +181,6 @@
 			files = (
 				CED0CECE26EE251500267F81 /* LaunchScreen.storyboard in Resources */,
 				CED0CECB26EE251500267F81 /* Assets.xcassets in Resources */,
-				CED0CEC926EE251400267F81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +191,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED0CEC626EE251400267F81 /* ViewController.swift in Sources */,
+				CE6E6CB326EE2D7900D6A05A /* StartScreenViewController.swift in Sources */,
+				CE6E6CBE26EF89BD00D6A05A /* UIColor.swift in Sources */,
+				CE6E6CB926EF740200D6A05A /* StructuralUnitsRouter.swift in Sources */,
 				CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */,
-				CED0CEC426EE251400267F81 /* SceneDelegate.swift in Sources */,
+				CE6E6CBB26EF743400D6A05A /* StructuralUnitsViewController.swift in Sources */,
+				CE6E6CC026EF9CA500D6A05A /* StructuralUnitsPresenter.swift in Sources */,
+				CE6E6CB126EE2A7F00D6A05A /* StartScreenRouter.swift in Sources */,
+				CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */,
+				CE6E6CB526EF567300D6A05A /* StartScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CED0CEC726EE251400267F81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CED0CEC826EE251400267F81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,6 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OpenKranodar/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -271,6 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OpenKranodar/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,7 +342,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PQNZ2TUC3;
-				INFOPLIST_FILE = OpenKranodar/Info.plist;
+				INFOPLIST_FILE = OpenKranodar/Default/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ulkoart.OpenKranodar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +362,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PQNZ2TUC3;
-				INFOPLIST_FILE = OpenKranodar/Info.plist;
+				INFOPLIST_FILE = OpenKranodar/Default/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ulkoart.OpenKranodar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
