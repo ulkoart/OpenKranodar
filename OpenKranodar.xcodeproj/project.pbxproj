@@ -74,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				CE6E6CBA26EF743400D6A05A /* StructuralUnitsViewController.swift */,
-				CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */,
 				CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */,
+				CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */,
 				CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */,
 			);
 			path = StructuralUnits;

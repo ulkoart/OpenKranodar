@@ -13,6 +13,7 @@ protocol StructuralUnitsPresenterProtocol: AnyObject {
     var router: StructuralUnitsRouterProtocol? { get set }
     
     func fetchStructuralUnits() -> Void
+    func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) -> Void
 }
 
 class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
@@ -21,6 +22,12 @@ class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
     var router: StructuralUnitsRouterProtocol?
     
     func fetchStructuralUnits(){
-        viewController?.showloadingView()
+        viewController?.showLoadingView()
+        interactor?.retrieveStructuralUnits()
+    }
+    
+    func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) {
+        viewController?.hideLoadingView()
+        viewController?.showStructuralUnits(subdivisions)
     }
 }
