@@ -19,18 +19,12 @@ final class StructuralUnitsInteractor: StructuralUnitsInteractorProtocol {
     private var subdivisions: [Subdivision]?
     
     func retrieveStructuralUnits() {
-        // Получили данные
-        subdivisionsService.getSubdivision { subdivision in
-            
+        subdivisionsService.getSubdivision { [weak self] subdivisions in
+            /// убрать дубликаты
+            let uniqueSubdivisions = Array(Set(subdivisions)).sorted { $0.id < $1.id }
+            self?.presenter?.fetchStructuralUnitsSuccess(subdivisions: uniqueSubdivisions)
         } failure: { [weak self] error in
             self?.presenter?.fetchStructuralUnitsFailure(error: error)
         }
-
-        
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-//            self?.subdivisions = [.init(id: 1, title: "Городская Дума"), .init(id: 2, title: "Управление торговли и бытового обслуживания")]
-//            self?.presenter?.fetchStructuralUnitsSuccess(subdivisions: self?.subdivisions ?? [])
-//            }
     }
 }

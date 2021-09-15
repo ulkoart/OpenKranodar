@@ -24,6 +24,5 @@ final class SubdivisionService: SubdivisionServiceProtocol {
         } failure: { error in
             failure(error)
         }
-
     }
 }

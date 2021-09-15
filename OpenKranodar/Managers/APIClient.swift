@@ -15,7 +15,7 @@ class APIClient {
     private init() {}
     
     func getSubdivisions(success: @escaping SuccessCompletion, failure: @escaping FailureCompletion) {
-        guard let url = URL(string: "") else {
+        guard let url = URL(string: "https://opendata.krd.ru/api/v1/datasets/") else {
             failure("Ошибка формирования URL.")
             return
         }
@@ -28,6 +28,16 @@ class APIClient {
             guard let data = data else {
                 failure("Ошибка с данными сетевого запроса.")
                 return
+            }
+            let jsonDecoder = JSONDecoder()
+            do {
+                let jsonDataset = try jsonDecoder.decode([Dataset].self, from: data)
+                let subdivisions = jsonDataset
+                    .map { $0.subdivision }
+                    .compactMap { $0 }
+                success(subdivisions)
+            } catch {
+                failure(error.localizedDescription)
             }
         }
         task.resume()

@@ -27,9 +27,12 @@ class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
         interactor?.retrieveStructuralUnits()
     }
     
+    /// Задать structuralUnit
     func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) {
-        viewController?.hideLoadingView()
-        viewController?.showStructuralUnits(subdivisions)
+        DispatchQueue.main.async { [weak self] in
+            self?.viewController?.hideLoadingView()
+            self?.viewController?.showStructuralUnits(subdivisions)
+        }
     }
     
     /// Ошибка при запросе данных

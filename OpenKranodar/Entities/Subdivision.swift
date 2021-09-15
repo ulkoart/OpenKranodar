@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Subdivision: Codable {
+struct Subdivision: Codable, Hashable {
     let id: Int
     let title: String
 }
