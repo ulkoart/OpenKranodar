@@ -17,6 +17,8 @@
 		CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */; };
 		CE6E6CC526EFA9C300D6A05A /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC426EFA9C300D6A05A /* Subdivision.swift */; };
 		CE6E6CC726EFA9FA00D6A05A /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */; };
+		CE8D959226F1FDD10054F879 /* SubdivisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D959126F1FDD10054F879 /* SubdivisionService.swift */; };
+		CE8D959526F20B7F0054F879 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D959426F20B7F0054F879 /* APIClient.swift */; };
 		CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC126EE251300267F81 /* AppDelegate.swift */; };
 		CED0CECB26EE251500267F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECA26EE251500267F81 /* Assets.xcassets */; };
 		CED0CECE26EE251500267F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */; };
@@ -33,6 +35,8 @@
 		CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralUnitsInteractor.swift; sourceTree = "<group>"; };
 		CE6E6CC426EFA9C300D6A05A /* Subdivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
 		CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		CE8D959126F1FDD10054F879 /* SubdivisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionService.swift; sourceTree = "<group>"; };
+		CE8D959426F20B7F0054F879 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CED0CEBE26EE251300267F81 /* OpenKranodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenKranodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED0CEC126EE251300267F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED0CECA26EE251500267F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +102,22 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		CE8D959026F1FCCD0054F879 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D959126F1FDD10054F879 /* SubdivisionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE8D959326F20B5E0054F879 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D959426F20B7F0054F879 /* APIClient.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		CED0CEB526EE251300267F81 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +139,8 @@
 			children = (
 				CE6E6CAE26EE292A00D6A05A /* Modules */,
 				CE6E6CC326EFA96B00D6A05A /* Entities */,
+				CE8D959026F1FCCD0054F879 /* Services */,
+				CE8D959326F20B5E0054F879 /* Managers */,
 				CE6E6CBC26EF89A000D6A05A /* Extensions */,
 				CED0CED526EE266400267F81 /* Default */,
 			);
@@ -208,11 +230,13 @@
 				CE6E6CB326EE2D7900D6A05A /* StartScreenViewController.swift in Sources */,
 				CE6E6CBE26EF89BD00D6A05A /* UIColor.swift in Sources */,
 				CE6E6CB926EF740200D6A05A /* StructuralUnitsRouter.swift in Sources */,
+				CE8D959226F1FDD10054F879 /* SubdivisionService.swift in Sources */,
 				CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */,
 				CE6E6CBB26EF743400D6A05A /* StructuralUnitsViewController.swift in Sources */,
 				CE6E6CC026EF9CA500D6A05A /* StructuralUnitsPresenter.swift in Sources */,
 				CE6E6CB126EE2A7F00D6A05A /* StartScreenRouter.swift in Sources */,
 				CE6E6CC726EFA9FA00D6A05A /* Dataset.swift in Sources */,
+				CE8D959526F20B7F0054F879 /* APIClient.swift in Sources */,
 				CE6E6CC226EFA6B800D6A05A /* StructuralUnitsInteractor.swift in Sources */,
 				CE6E6CB526EF567300D6A05A /* StartScreenPresenter.swift in Sources */,
 				CE6E6CC526EFA9C300D6A05A /* Subdivision.swift in Sources */,

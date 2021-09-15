@@ -9,22 +9,28 @@ import Foundation
 
 protocol StructuralUnitsInteractorProtocol {
     var presenter: StructuralUnitsPresenterProtocol? { get set }
-    var subdivisions: [Subdivision]? { get set }
     
     func retrieveStructuralUnits() -> Void
 }
 
-class StructuralUnitsInteractor: StructuralUnitsInteractorProtocol {
+final class StructuralUnitsInteractor: StructuralUnitsInteractorProtocol {
     weak var presenter: StructuralUnitsPresenterProtocol?
-    
-    var subdivisions: [Subdivision]?
+    private var subdivisionsService: SubdivisionServiceProtocol = SubdivisionService.shared
+    private var subdivisions: [Subdivision]?
     
     func retrieveStructuralUnits() {
         // Получили данные
+        subdivisionsService.getSubdivision { subdivision in
+            
+        } failure: { [weak self] error in
+            self?.presenter?.fetchStructuralUnitsFailure(error: error)
+        }
+
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-            self?.subdivisions = [.init(id: 1, title: "Городская Дума"), .init(id: 2, title: "Управление торговли и бытового обслуживания")]
-            self?.presenter?.fetchStructuralUnitsSuccess(subdivisions: self?.subdivisions ?? [])
-            }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+//            self?.subdivisions = [.init(id: 1, title: "Городская Дума"), .init(id: 2, title: "Управление торговли и бытового обслуживания")]
+//            self?.presenter?.fetchStructuralUnitsSuccess(subdivisions: self?.subdivisions ?? [])
+//            }
     }
 }

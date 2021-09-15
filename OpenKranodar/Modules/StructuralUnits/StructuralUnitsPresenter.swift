@@ -14,6 +14,7 @@ protocol StructuralUnitsPresenterProtocol: AnyObject {
     
     func fetchStructuralUnits() -> Void
     func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) -> Void
+    func fetchStructuralUnitsFailure(error: String) -> Void
 }
 
 class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
@@ -29,5 +30,11 @@ class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
     func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) {
         viewController?.hideLoadingView()
         viewController?.showStructuralUnits(subdivisions)
+    }
+    
+    /// Ошибка при запросе данных
+    func fetchStructuralUnitsFailure(error: String) {
+        viewController?.hideLoadingView()
+        // TODO показать ошибку
     }
 }
