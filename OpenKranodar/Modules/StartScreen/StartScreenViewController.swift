@@ -149,7 +149,7 @@ final class StartScreenViewController: UIViewController {
         // MARK: - goToAppButton
         view.addSubview(goToAppButton)
         goToAppButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        goToAppButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16).isActive = true
+        goToAppButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
         goToAppButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         goToAppButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         goToAppButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
