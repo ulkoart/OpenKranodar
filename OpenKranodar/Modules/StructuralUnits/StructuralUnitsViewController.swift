@@ -27,8 +27,9 @@ class StructuralUnitsViewController: UIViewController {
         tableView.allowsSelection = false
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .singleLine
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) // or .zero
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UnitTableViewCell.self, forCellReuseIdentifier: UnitTableViewCell.reuseIdentifier)
         return tableView
     }()
     
@@ -104,14 +105,18 @@ extension StructuralUnitsViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UnitTableViewCell.reuseIdentifier, for: indexPath) as? UnitTableViewCell else { fatalError() }
         let structuralUnit = structuralUnits[indexPath.row]
-        cell.textLabel?.text = "\(structuralUnit.title)"
+        cell.setup(structuralUnit)
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 }
 

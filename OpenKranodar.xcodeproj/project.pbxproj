@@ -19,6 +19,7 @@
 		CE6E6CC726EFA9FA00D6A05A /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */; };
 		CE8D959226F1FDD10054F879 /* SubdivisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D959126F1FDD10054F879 /* SubdivisionService.swift */; };
 		CE8D959526F20B7F0054F879 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D959426F20B7F0054F879 /* APIClient.swift */; };
+		CED06B4226F4AB57002DC6EF /* UnitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06B4126F4AB57002DC6EF /* UnitTableViewCell.swift */; };
 		CED0CEC226EE251300267F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0CEC126EE251300267F81 /* AppDelegate.swift */; };
 		CED0CECB26EE251500267F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECA26EE251500267F81 /* Assets.xcassets */; };
 		CED0CECE26EE251500267F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0CECC26EE251500267F81 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 		CE6E6CC626EFA9FA00D6A05A /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		CE8D959126F1FDD10054F879 /* SubdivisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionService.swift; sourceTree = "<group>"; };
 		CE8D959426F20B7F0054F879 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CED06B4126F4AB57002DC6EF /* UnitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTableViewCell.swift; sourceTree = "<group>"; };
 		CED0CEBE26EE251300267F81 /* OpenKranodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenKranodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED0CEC126EE251300267F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED0CECA26EE251500267F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				CE6E6CBF26EF9CA500D6A05A /* StructuralUnitsPresenter.swift */,
 				CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */,
 				CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */,
+				CED06B4026F4A835002DC6EF /* cells */,
 			);
 			path = StructuralUnits;
 			sourceTree = "<group>";
@@ -116,6 +119,14 @@
 				CE8D959426F20B7F0054F879 /* APIClient.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		CED06B4026F4A835002DC6EF /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				CED06B4126F4AB57002DC6EF /* UnitTableViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		CED0CEB526EE251300267F81 = {
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6E6CB326EE2D7900D6A05A /* StartScreenViewController.swift in Sources */,
+				CED06B4226F4AB57002DC6EF /* UnitTableViewCell.swift in Sources */,
 				CE6E6CBE26EF89BD00D6A05A /* UIColor.swift in Sources */,
 				CE6E6CB926EF740200D6A05A /* StructuralUnitsRouter.swift in Sources */,
 				CE8D959226F1FDD10054F879 /* SubdivisionService.swift in Sources */,
