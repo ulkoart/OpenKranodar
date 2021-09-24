@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UnitTableViewCell: UITableViewCell {
+final class UnitTableViewCell: UITableViewCell {
     
     static let reuseIdentifier: String = "unitTableViewCell"
     
@@ -33,6 +33,7 @@ class UnitTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupUI()
     }
     
@@ -56,6 +57,5 @@ class UnitTableViewCell: UITableViewCell {
         titileLabel.leadingAnchor.constraint(equalTo: subdivisionImageView.trailingAnchor, constant: 8).isActive = true
         titileLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8).isActive = true
         titileLabel.centerYAnchor.constraint(equalTo: subdivisionImageView.centerYAnchor).isActive = true
-        
     }
 }

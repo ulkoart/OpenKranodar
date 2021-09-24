@@ -9,6 +9,7 @@ import UIKit
 
 protocol StructuralUnitsRouterProtocol: AnyObject {
     static func createModule() -> UINavigationController
+    func presentDepartmentOfTradeScreen() -> Void
 }
 
 class StructuralUnitsRouter: StructuralUnitsRouterProtocol {
@@ -25,5 +26,9 @@ class StructuralUnitsRouter: StructuralUnitsRouterProtocol {
         viewController.presenter?.interactor?.presenter = viewController.presenter
                 
         return UINavigationController(rootViewController: viewController)
+    }
+    
+    func presentDepartmentOfTradeScreen() {
+        print(#function)
     }
 }

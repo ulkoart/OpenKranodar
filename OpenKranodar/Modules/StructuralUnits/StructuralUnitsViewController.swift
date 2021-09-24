@@ -30,6 +30,7 @@ class StructuralUnitsViewController: UIViewController {
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) // or .zero
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UnitTableViewCell.self, forCellReuseIdentifier: UnitTableViewCell.reuseIdentifier)
+        tableView.allowsSelection = true
         return tableView
     }()
     
@@ -59,7 +60,6 @@ class StructuralUnitsViewController: UIViewController {
         view.addSubview(loadMsg)
         loadMsg.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loadMsg.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8).isActive = true
-        
         return view
     }()
     
@@ -117,6 +117,11 @@ extension StructuralUnitsViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let subdivision: Subdivision = structuralUnits[indexPath.row]
+        presenter?.showSubdivisionDetail(subdivision)
     }
 }
 

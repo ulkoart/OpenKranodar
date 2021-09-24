@@ -57,6 +57,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE20E60F26FE294B004F18AF /* DepartmentOfTrade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DepartmentOfTrade;
+			sourceTree = "<group>";
+		};
 		CE6E6CAE26EE292A00D6A05A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +91,7 @@
 				CE6E6CC126EFA6B800D6A05A /* StructuralUnitsInteractor.swift */,
 				CE6E6CB826EF740200D6A05A /* StructuralUnitsRouter.swift */,
 				CED06B4026F4A835002DC6EF /* cells */,
+				CE20E60F26FE294B004F18AF /* DepartmentOfTrade */,
 			);
 			path = StructuralUnits;
 			sourceTree = "<group>";

@@ -15,12 +15,17 @@ protocol StructuralUnitsPresenterProtocol: AnyObject {
     func fetchStructuralUnits() -> Void
     func fetchStructuralUnitsSuccess(subdivisions: [Subdivision]) -> Void
     func fetchStructuralUnitsFailure(error: String) -> Void
+    func showSubdivisionDetail(_ subdivision :Subdivision)
 }
 
 class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
     weak var viewController: StructuralUnitsViewControllerProtocol?
     var interactor: StructuralUnitsInteractorProtocol?
     var router: StructuralUnitsRouterProtocol?
+    
+    private enum SubdivisionSection: Int {
+        case departmentOfTrade = 2
+    }
     
     func fetchStructuralUnits(){
         viewController?.showLoadingView()
@@ -39,5 +44,18 @@ class StructuralUnitsPresenter: StructuralUnitsPresenterProtocol {
     func fetchStructuralUnitsFailure(error: String) {
         viewController?.hideLoadingView()
         // TODO показать ошибку
+    }
+    
+    
+    /// Переход на экран раздела
+    /// - Parameter subdivision: передается subdivision
+    /// в зависимости от id вызывается роутер с переходом на соответствующий экран
+    func showSubdivisionDetail(_ subdivision :Subdivision) {
+        guard let subdivisionSection = SubdivisionSection(rawValue: subdivision.id) else { return }
+        
+        switch subdivisionSection {
+        case .departmentOfTrade:
+            router?.presentDepartmentOfTradeScreen()
+        }
     }
 }
